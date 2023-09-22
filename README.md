@@ -1,3 +1,12 @@
+# Sustainability website, created using React JS
+This project was made using React, which means you need to make sure that Node.js is installed on your device.
+It is best to run some code below to make sure that the program will run smoothly
+Otherwise
+### `npm start`
+To get started
+
+Read below if you need any help running this App
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
