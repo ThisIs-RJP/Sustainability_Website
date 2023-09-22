@@ -1,6 +1,6 @@
 # Sustainability website, created using React JS
 This project was made using React, which means you need to make sure that Node.js is installed on your device.
-It is best to run some code below to make sure that the program will run smoothly
+It is best to run some code below to make sure that the program will run smoothly. Make sure that the Node modules are installed on your computer
 Otherwise
 ### `npm start`
 To get started
