@@ -13,6 +13,54 @@
   }
 }
 
+#hide {
+  /* position: fixed; */
+  top:50vh;
+  padding-top: 5%;
+  left:40vh;
+  color: white;
+  transition: opacity 2s ease, transform 1s ease;
+  animation: fadeIn 0.5s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+    } 
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+/* 
+#height {
+  display: flex;
+  top:5vh;
+  /* display: flex; */
+  /* left:5vh; */
+/* } */
+
+
+#container2 {
+  min-height:200vh;
+  background-color: rgb(66, 66, 66);
+  width: 100%;
+}
+
+.animated-element {
+  opacity: 0;
+  color: green;
+  transition: opacity 0.75s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
 .navBar {
   display: flex;
   flex-direction: row;
@@ -63,7 +111,7 @@
 }
 
 .container1 {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
@@ -73,16 +121,28 @@
   /* align-items: center; */
 }
 
+.leafP {
+  width: 50%;
+  flex: 1;
+  float: right;
+  margin-top: -30%;
+  margin-bottom: -50%;
+}
+
 .containerCir {
   margin-top: -2%;
   margin-left: -9%;
 }
+
 .textBox1 {
   margin-bottom: 0%;
   display: flex;
   /* background-color: white; */
 }
 
+.textBox2 {
+  margin-top: 20%;
+}
 .container2 {
   margin-top: -5%;
 }
@@ -115,5 +175,3 @@
     transform: rotate(360deg);
   }
 }
-
-
