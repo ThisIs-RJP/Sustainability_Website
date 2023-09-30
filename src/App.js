@@ -8,7 +8,6 @@ import leaf from './images/leaf.png'
 import { useState, useEffect } from 'react';
 
 function App() {
-
   const [isVisible, setIsVisible] = useState(true);
   const [height, setHeight] = useState(0)
   const fadeIn = useSpring({
@@ -29,15 +28,15 @@ function App() {
   }, [])
 
 
-  const listenToScroll = () => {
-    let heightToHideFrom = 900;
+  const listenToScroll = () => { // does 
+    let heightToHideFrom = 600;
     const winScroll = document.body.scrollTop ||
       document.documentElement.scrollTop;
     setHeight(winScroll);
 
     if (winScroll > heightToHideFrom) {
-      isVisible && setIsVisible(true);
-    } else {
+      isVisible && setIsVisible(true); 
+    } else { 
       setIsVisible(false);
     }
   };
@@ -57,7 +56,7 @@ function App() {
         <div className='container1'>
           <div className='textBox1'>
             <h1>
-              This is the very big title
+              This is the very big title.
             </h1>
           </div>
           <div className='textBottom1'>
@@ -93,19 +92,9 @@ function App() {
         {/* THIS IS THE END OF THE CONTAINER ############################### */}
         {/* </animated.div> */}
       </animated.div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div className='buffer'>
+        {/* <br></br> */}
+      </div>
       <div id="container2">
         <br></br>
         <br></br>
