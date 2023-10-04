@@ -51,6 +51,97 @@
   padding-top: 0.5%;
 }
 
+.titleFadeDiv {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+}
+
+.titleFade {
+  color: white;
+  animation: fadeIn 1s;
+}
+
+.belowTitle {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.textFade {
+  animation: fadeIn2 3s;
+}
+
+.whiteToGreen {
+  color: rgb(4, 187, 4);
+  animation: colorChange 10s;
+}
+
+.greenLineSlot {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.greenLineTitle {
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: rgb(4, 187, 4);
+  animation: outwards 6s forwards;
+  animation-delay: 5s;
+}
+
+@keyframes outwards {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  25% {
+    color: white;
+
+  }
+  50% {
+    color: rgb(6, 172, 6)
+  }
+  100% {
+    color: rgb(4, 187, 4)
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 #container2 {
   min-height:200vh;
   /* background-color: red; */
@@ -75,6 +166,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 2%;
+  margin-bottom: 10%;
 }
 
 .rotCircles {
