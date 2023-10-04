@@ -35,8 +35,8 @@ function App() {
     setHeight(winScroll);
 
     if (winScroll > heightToHideFrom) {
-      isVisible && setIsVisible(true); 
-    } else { 
+      isVisible && setIsVisible(true);
+    } else {
       setIsVisible(false);
     }
   };
@@ -50,8 +50,34 @@ function App() {
           <div className='gapBox'>
           </div>
           <b><a href="youtube.com" className='link'> Link2 </a></b>
-
         </div>
+      </animated.div>
+
+      {/* Got to put something below the navBar.........
+        ############################################################################## */}
+
+      <div className='titleFadeDiv'>
+        <h1 className="titleFade">
+          Welcome to the Sustainability Website
+        </h1>
+      </div>
+      <div className='belowTitle'>
+        <h1 className="textFade">
+          Ready to start living <i className='whiteToGreen'>green</i>?
+        </h1>
+      </div>
+      <div className="greenLineSlot">
+        <div className='greenLineTitle'>
+          &nbsp;
+        </div>
+        <div className="boxBlack">
+        </div>
+        {/* <div className="boxBlack2">
+        </div> */}
+      </div>
+
+      <animated.div style={fadeIn}>
+
         {/* <animated.div style={fadeIn}> */}
         <div className='container1'>
           <div className='textBox1'>
